@@ -1,0 +1,40 @@
+{
+    "name": "calcifux/laravel-stream-remote",
+    "description": "A Laravel Guzzle Stream Remote Download Package",
+    "type": "library",
+    "require": {
+        "php": "^7.4",
+        "illuminate/routing": "^8.0",
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.4",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Calcifux\\LaravelStreamRemote\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Calcifux\\LaravelStreamRemote\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Calcifux\\LaravelStreamRemote\\StreamRemoteServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Carlos Guillermo Reyes Ramiro",
+            "email": "memo.jaras2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
